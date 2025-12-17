@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Panel</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="tabs">
+      <button class="tab active" data-filter="all">All</button>
+      <button class="tab" data-filter="incomplete">Incomplete</button>
+      <button class="tab" data-filter="completed">Completed</button>
+    </div>
+
+    <select id="sortFilter" aria-label="Sort messages by date">
+      <option value="new">New → Old</option>
+      <option value="old">Old → New</option>
+    </select>
+  </nav>
+
+  <!-- MESSAGES -->
+  <div class="container" id="messagesContainer"></div>
+
+  <script src="admin.js"></script>
+</body>
+</html>
