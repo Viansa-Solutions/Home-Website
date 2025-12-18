@@ -375,107 +375,130 @@
             color: var(--color-text-secondary);
         }
 
-        /* Pricing Section Styles */
+        /* ================= PRICING SECTION ================= */
         .pricing {
-        background-color: #f9fafb; /* light gray background */
-        padding: 4rem 1rem;
+            background-color: #f9fafb; /* light gray background */
+            padding: 4rem 1rem;
         }
 
         .pricing-header h2 {
-        font-size: 2rem;
-        font-weight: 700;
-        color: #111827; /* dark gray */
-        margin-bottom: 2rem;
-        text-align: center;
+            font-size: 2rem;
+            font-weight: 700;
+            color: #111827; /* dark gray */
+            margin-bottom: 2rem;
+            text-align: center;
         }
 
-
-        /* .services-grid {
+        .pricing-container{
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: var(--space-32);
             max-width: 1200px;
             margin: 0 auto;
-        } */
-        .pricing-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: var(--space-32);
-        max-width: 1200px;
-        margin: 0 auto;
         }
 
-        .pricing-card {
-        background-color: #ffffff;
-        border-radius: 0.75rem;
-        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        padding: 2rem;
-        text-align: center;
-        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        .pricing-card{
+            background-color: #ffffff;
+            border-radius: 0.75rem;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            padding: 2rem;
+            transition: transform 0.35s, box-shadow 0.35s;
         }
 
-        .pricing-card:hover {
-        transform: translateY(-4px);
-        box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        .pricing-card:hover{
+            border: 2px solid #4a6cf7;
+            transform: translateY(-8px);
+            box-shadow: 0 12px 28px rgba(74,108,247,0.22);
         }
 
-        .pricing-card h3 {
-        font-size: 1.25rem;
-        font-weight: 600;
-        color: #1f2937;
+        .pricing-card h3{
+            font-size: 22px;
+            font-family: 600;
+            color: #4a6cf7;
+            margin-top: -15px;
+            /* margin-bottom: 10px; */
         }
 
-        .pricing-card .price {
-        margin-top: 1rem;
-        font-size: 2rem;
-        font-weight: 700;
-        color: #4f46e5; /* indigo */
-        }
-
-        .pricing-card ul {
-        margin-top: 1.5rem;
-        list-style: none;
-        padding: 0;
-        }
-
-        .pricing-card ul li {
-        margin: 0.5rem 0;
-        color: #6b7280; /* gray */
-        }
-
-        .pricing-card a {
-        display: inline-block;
-        margin-top: 1.5rem;
-        width: 100%;
-        background-color: #4f46e5;
-        color: #ffffff;
-        padding: 0.75rem;
-        border-radius: 0.5rem;
-        font-weight: 500;
-        text-decoration: none;
-        transition: background-color 0.2s ease;
-        }
-
-        .pricing-card a:hover {
-        background-color: #4338ca; /* darker indigo */
-        }
-
-        .pricing-features {
-            list-style: none;
-        }
-
-        .pricing-features li {
-            padding: var(--space-8) 0;
-            color: var(--color-text-secondary);
-            display: flex;
-            align-items: center;
-            gap: var(--space-8);
-        }
-
-        .pricing-features li::before {
-            content: "✓";
-            color: var(--color-success);
+        .pricing-card .price{
+            margin-top: 10px;
+            font-size: 28px;
             font-weight: 700;
+            color: #4a6cf7;
+            margin-bottom: 15px;
+        }
+
+        .suitable-for {
+            font-weight: 600;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .suitable-info{
+            font-weight: 500;
+            color: #4a6cf7;
+            text-align: center;
+        }
+
+        .pricing-card ul li{
+            text-align: center;
+            font-size: 15px;
+            margin: 6px 0;
+            color: #333;
+        }
+
+        .price {
+            display: flex;
+            flex-direction: column;
+            /* gap: 4px; */
+        }
+
+        .old-price {
+            text-decoration: line-through;
+            color: #999;
+            font-size: 16px;
+            margin-bottom: -12px;
+        }
+
+        .new-price {
+            font-size: 28px;
+            font-weight: 700;
+            color: #4a6cf7;
+        }
+
+        .feature-list {
+            list-style: none;
+            padding: 0;
+            margin: 30px;
+            text-align: left;
+        }
+
+        .feature-list li {
+            font-size: 15px;
+            margin: 12px 0;
+            display: flex;
+            align-items: flex-start;
+            gap: 8px;
+            color: #333;
+            line-height: 1.5;
+        }
+
+        .feature-list .yes {
+            color: #22c55e; /* green */
+            font-weight: bold;
+        }
+
+        .feature-list .no {
+            color: #ef4444; /* red */
+            font-weight: bold;
+        }
+
+        /* Responsive */
+        @media(max-width:900px){
+            .pricing-container{
+                flex-direction: column;
+                align-items: center;
+            }
         }
 
         /* Testimonials */
@@ -540,110 +563,131 @@
         /* CTA Section */
         .cta-section {
             padding: var(--space-64) var(--space-24);
-            text-align: center;
-            max-width: 800px;
+            /* max-width: 800px; */
             margin: 0 auto;
         }
 
         .cta-section h2 {
             font-size: 42px;
             font-weight: 700;
+            text-align: center;
             margin-bottom: var(--space-16);
         }
 
         .cta-section p {
             font-size: 18px;
+            text-align: center;
             color: var(--color-text-secondary);
             margin-bottom: var(--space-32);
         }
 
         /* Contact Form */
-        .contact-form {
-            max-width: 500px;
-            margin: var(--space-32) auto 0;
+        .ticket-container {
+            max-width: 900px;
+            margin: auto;
+            background: #f1f4ff;
+            padding: 40px;
+            border-radius: 12px;
+        }
+
+        .subtitle {
+            color: #6b7280;
+            margin-bottom: 32px;
+            text-align: center;
+        }
+
+        .form-row {
             display: flex;
-            flex-direction: column;
-            gap: var(--space-16);
+            gap: 24px;
+            margin-bottom: 24px;
         }
 
         .form-group {
+            flex: 1;
             display: flex;
             flex-direction: column;
-            gap: var(--space-8);
         }
 
-        .form-group label {
-            font-weight: 600;
-            font-size: 14px;
+        label {
+            margin-bottom: 6px;
+            font-weight: 500;
         }
 
-        .form-group input,
-        .form-group select,
-        .form-group textarea {
-            padding: 12px var(--space-16);
-            border: 1px solid var(--color-border);
-            border-radius: var(--radius-base);
-            background: var(--color-background);
-            color: var(--color-text);
-            font-family: inherit;
-            font-size: 16px;
-            transition: border-color 0.3s ease;
-        }
-
-        .form-group input:focus,
-        .form-group select:focus,
-        .form-group textarea:focus {
-            outline: none;
-            border-color: var(--color-primary);
-        }
-
-        .form-group textarea {
-            resize: vertical;
-            min-height: 120px;
-        }
-
-        .submit-button {
-            background: var(--color-primary);
-            color: white;
-            padding: 14px var(--space-32);
+        /* Input base */
+        input,
+        textarea,
+        select {
+            padding: 14px;
+            border-radius: 8px;
             border: none;
-            border-radius: var(--radius-base);
-            font-weight: 600;
+            outline: none;
             font-size: 16px;
+            background-color: #ffffff !important;
+            color: #000000;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+            transition: box-shadow 0.2s ease, background-color 0.2s ease;
+        }
+
+        textarea {
+            min-height: 160px;
+            resize: vertical;
+        }
+
+        /* Focus state */
+        input:focus,
+        textarea:focus,
+        select:focus {
+            box-shadow:
+                0 4px 10px rgba(0, 0, 0, 0.12),
+                0 0 0 2px rgba(74, 90, 240, 0.6);
+        }
+
+        /* Chrome autofill fix */
+        input:-webkit-autofill,
+        textarea:-webkit-autofill,
+        select:-webkit-autofill {
+            -webkit-box-shadow:
+                0 0 0 1000px #ffffff inset,
+                0 4px 10px rgba(0, 0, 0, 0.12) !important;
+            -webkit-text-fill-color: #000000 !important;
+        }
+
+        button {
+            background: #5b6cff;
+            color: #fff;
+            border: none;
+            padding: 12px 28px;
+            font-size: 16px;
+            border-radius: 8px;
             cursor: pointer;
-            transition: all 0.3s ease;
+            margin: 30px auto 0;
+            display: block;  
+            transition: background 0.3s ease;
+
         }
 
-        .submit-button:hover {
-            background: var(--color-primary-hover);
-            transform: translateY(-2px);
-            box-shadow: var(--shadow-md);
-        }
-
-        .submit-button:disabled {
-            opacity: 0.6;
-            cursor: not-allowed;
-            transform: none;
+        button:hover {
+            background: #4a5af0;
         }
 
         .form-message {
-            padding: var(--space-16);
-            border-radius: var(--radius-base);
-            text-align: center;
-            font-weight: 500;
             display: none;
+            margin-top: 16px;
+            padding: 12px;
+            border-radius: 8px;
+            font-weight: 500;
+            text-align: center;
         }
 
         .form-message.success {
             background: #d1fae5;
             color: #065f46;
-            border: 1px solid #10b981;
         }
 
-        .form-message.error {
-            background: #fee2e2;
-            color: #991b1b;
-            border: 1px solid #ef4444;
+        @media (max-width: 768px) {
+            .form-row {
+                flex-direction: column;
+            }
         }
 
         /* Footer */

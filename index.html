@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Viansa Solutions - Digital Solutions for Your Business</title>
     
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <!-- Navigation -->
@@ -24,7 +24,7 @@
                 <!-- <li><a href="#testimonials">Testimonials</a></li> -->
                 <li><a href="#pricing">Pricing</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li><a href="#contact" class="cta-button-secondary">Get Started</a></li>
+                <li><a href="admin.html" class="cta-button-secondary">Admin Panel</a></li>
             </ul>
         </div>
     </nav>
@@ -181,51 +181,69 @@
         </div>
     </section>
 
-    <!-- Pricing Section -->
+    <!-- ========== PRICING SECTION ========== -->
     <section class="pricing" id="pricing">
         <div class="section-header">
-            <h2>Our Pricing</h2>
-            <p>A detailed view of our pricing</p>
+            <h2>Pricing Plans</h2>
+            <p>Choose a plan that fits your business needs. Transparent pricing with no hidden costs.</p>
         </div>
-    <div class="pricing-grid">
-        <div class="pricing-card">
-            <h3>Lite</h3>
-            <p class="price">₹5555<span>/-</span></p>
-            <ul class="pricing-features">
-                <li>All UI Components</li>
-                <li>Unlimited Commercial Use</li>
-                <li>Email Support</li>
-                <li>Lifetime Access</li>
-                <li>Free Lifetime Updates</li>
-            </ul>
-            <a href="#">Start Free Trial</a>
+
+        <div class="pricing-container">
+            
+            <!-- BASIC PLAN -->
+            <div class="pricing-card reveal reveal--zoom-in" data-stagger="100">
+                <h3>Basic</h3>
+                <p class="price">
+                    <span class="old-price">₹15,000/-</span>
+                    <span class="new-price" data-from="15000" data-to="7999">₹7,999/-</span>
+                </p>
+                <p class="suitable-for">Best Suitable For:</p>
+                <p class="suitable-info">Personal Portfolio, Simple Info Website & Single-Page Website</p>
+                <ul class="feature-list">
+                    <li><span class="yes">✔</span> Maintenance: 7 Days</li>
+                    <li><span class="yes">✔</span> Delivery Time: 15-20 Days</li>
+                    <li><span class="yes">✔</span> Revisions: 1 Time</li>
+                </ul>
+                <a href="#contact" class="cta-button">Get Started</a>
+            </div>
+
+            <!-- STANDARD PLAN -->
+            <div class="pricing-card reveal reveal--zoom-in" data-stagger="200">
+                <h3>Standard</h3>
+                <p class="price">
+                    <span class="old-price">₹20,000/-</span>
+                    <span class="new-price" data-from="20000" data-to="11999">₹11,999/-</span>
+                </p>
+                <p class="suitable-for">Best Suitable For:</p>
+                <p class="suitable-info">Small Business, Tourism Website & Coaching Institute Website</p>
+                <ul class="feature-list">
+                    <li><span class="yes">✔</span> Maintenance: 15 Days</li>
+                    <li><span class="yes">✔</span> Delivery Time: 20-25 Days</li>
+                    <li><span class="yes">✔</span> Revisions: 2 Times</li>
+                </ul>
+                <a href="#contact" class="cta-button">Get Started</a>
+            </div>
+
+            <!-- PREMIUM PLAN -->
+            <div class="pricing-card reveal reveal--zoom-in" data-stagger="300">
+                <h3>Premium</h3>
+                <p class="price">
+                    <span class="old-price">₹25,000/-</span>
+                    <span class="new-price" data-from="25000" data-to="19999">₹19,999/-</span>
+                </p>
+                <p class="suitable-for">Best Suitable For:</p>
+                <p class="suitable-info">Professional Business, Tourism Website, Startup & Brand Websites</p>
+                <ul class="feature-list">
+                    <li><span class="yes">✔</span> Maintenance: 30 Days</li>
+                    <li><span class="yes">✔</span> Delivery Time: 45-50 Days</li>
+                    <li><span class="yes">✔</span> Revisions: 3 Times</li>
+                </ul>
+                <a href="#contact" class="cta-button">Get Started</a>
+            </div>
+
         </div>
-        <div class="pricing-card">
-            <h3>Lite</h3>
-            <p class="price">₹5555<span>/-</span></p>
-            <ul class="pricing-features">
-                <li>All UI Components</li>
-                <li>Unlimited Commercial Use</li>
-                <li>Email Support</li>
-                <li>Lifetime Access</li>
-                <li>Free Lifetime Updates</li>
-            </ul>
-            <a href="#">Start Free Trial</a>
-        </div>
-        <div class="pricing-card">
-            <h3>Lite</h3>
-            <p class="price">₹5555<span>/-</span></p>
-            <ul class="pricing-features">
-                <li>All UI Components</li>
-                <li>Unlimited Commercial Use</li>
-                <li>Email Support</li>
-                <li>Lifetime Access</li>
-                <li>Free Lifetime Updates</li>
-            </ul>
-            <a href="#">Start Free Trial</a>
-        </div>
-    </div>
     </section>
+
 
     <!-- Testimonials -->
     <!-- <section class="testimonials" id="testimonials">
@@ -271,47 +289,60 @@
     <section class="cta-section" id="contact">
         <h2>Ready to Start Your Project?</h2>
         <p>Let's discuss how we can help transform your digital presence and drive your business growth.</p>
-        
-        <form class="contact-form" id="contactForm">
-            <div class="form-message" id="formMessage"></div>
-            
-            <div class="form-group">
-                <label for="name">Full Name *</label>
-                <input type="text" id="name" name="name" required>
+
+        <div class="ticket-container">
+            <form id="contactForm">
+
+            <!-- Row 1 -->
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Your Name</label>
+                    <input type="text" id="name" placeholder="Enter your name" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Your Email</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                </div>
             </div>
-            
-            <div class="form-group">
-                <label for="email">Email Address *</label>
-                <input type="email" id="email" name="email" required>
+
+            <!-- Row 2 -->
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Phone Number</label>
+                    <input type="tel" id="phone" placeholder="Enter phone number">
+                </div>
+
+                <div class="form-group">
+                    <label for="service">Service Interested In</label>
+                    <select id="service" required>
+                        <option value="">Select a service</option>
+                        <option>E-Commerce Development</option>
+                        <option>Promotional Websites</option>
+                        <option>Business Websites</option>
+                        <option>Web Applications</option>
+                        <option>UI/UX Design</option>
+                        <option>Digital Marketing</option>
+                        <option>Other</option>
+                    </select>
+                </div>
             </div>
-            
+
+            <!-- Message -->
             <div class="form-group">
-                <label for="phone">Phone Number</label>
-                <input type="tel" id="phone" name="phone">
+                <label>Project Details</label>
+                <textarea id="message" placeholder="Tell us about your project" required></textarea>
             </div>
-            
-            <div class="form-group">
-                <label for="service">Service Interested In *</label>
-                <select id="service" name="service" required>
-                    <option value="">Select a service</option>
-                    <option value="ecommerce">E-Commerce Development</option>
-                    <option value="promotional">Promotional Website</option>
-                    <option value="business">Business Website</option>
-                    <option value="webapp">Web Application</option>
-                    <option value="design">UI/UX Design</option>
-                    <option value="marketing">Digital Marketing</option>
-                    <option value="other">Other</option>
-                </select>
-            </div>
-            
-            <div class="form-group">
-                <label for="message">Project Details *</label>
-                <textarea id="message" name="message" required placeholder="Tell us about your project..."></textarea>
-            </div>
-            
+
             <button type="submit" class="submit-button">Send Message</button>
-        </form>
+
+            <div class="form-message" id="formMessage"></div>
+
+            </form>
+        </div>
     </section>
+
+    
 
     <!-- Footer -->
     <footer>
@@ -354,6 +385,6 @@
     </footer>
 
     
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
