@@ -279,17 +279,22 @@
         }
 
         .service-card {
-            background: var(--color-background);
+            /* background: var(--color-background); */
+            background-color: #ffffff;
             padding: var(--space-32);
             border-radius: var(--radius-xl);
-            box-shadow: var(--shadow-sm);
-            transition: all 0.3s ease;
+            /* box-shadow: var(--shadow-sm); */
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            /* transition: all 0.3s ease; */
+            transition: transform 0.35s, box-shadow 0.35s;
             border: 1px solid var(--color-border);
         }
 
         .service-card:hover {
+            border: 2px solid #4a6cf7;
             transform: translateY(-8px);
-            box-shadow: var(--shadow-lg);
+            /* box-shadow: var(--shadow-lg); */
+            box-shadow: 0 12px 28px rgba(74,108,247,0.22);
         }
 
         .service-icon {
@@ -315,6 +320,10 @@
             line-height: 1.7;
         }
 
+         .service-list {
+            margin-top: 50px;
+        }
+        
         .service-features {
             list-style: none;
         }
