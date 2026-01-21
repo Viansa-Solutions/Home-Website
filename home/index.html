@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viansa Solutions - Digital Excellence</title>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-content">
+            <a href="#hero" class="nav-logo">
+                Viansa Solutions
+            </a>
+
+            <!-- Desktop Menu -->
+            <div class="desktop-menu">
+                <a href="#hero" class="nav-link">
+                    Home
+                    <span></span>
+                </a>
+                <a href="#services" class="nav-link">
+                    Services
+                    <span></span>
+                </a>
+                <a href="#process" class="nav-link">
+                    Process
+                    <span></span>
+                </a>
+                <a href="#pricing" class="nav-link">
+                    Pricing
+                    <span></span>
+                </a>
+                <a href="#contact" class="nav-link">
+                    Contact
+                    <span></span>
+                </a>
+                <a href="#contact" class="btn-primary">
+                    <div class="btn-bg"></div>
+                    <span class="btn-content">Get Started</span>
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="mobile-menu-btn" type="button" aria-label="Toggle mobile menu">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+        
+        <!-- Gradient Bottom Line -->
+        <div class="nav-line"></div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="mobile-menu hidden">
+            <div class="mobile-menu-content">
+                <a href="#hero" class="mobile-nav-link">Home</a>
+                <a href="#services" class="mobile-nav-link">Services</a>
+                <a href="#process" class="mobile-nav-link">Process</a>
+                <a href="#pricing" class="mobile-nav-link">Pricing</a>
+                <a href="#contact" class="mobile-nav-link">Contact</a>
+                <a href="#contact" class="mobile-cta-btn">
+                    Get Started
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="bg-decoration">
+            <div class="hero-bg-blob blob-1"></div>
+            <div class="hero-bg-blob blob-2"></div>
+        </div>
+        
+        <div class="container hero-content reveal">
+            <span class="hero-badge">
+                Digital Excellence
+            </span>
+            <h1 class="hero-title">
+                Transform Your Business with <span class="text-gradient animate-gradient">Digital Innovation</span>
+            </h1>
+            <p class="hero-subtitle">
+                We create stunning e-commerce platforms, promotional websites, and custom digital solutions that drive growth and engage your audience.
+            </p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn-primary">
+                    <div class="btn-bg"></div>
+                    <span class="btn-content">Start Your Project <i data-lucide="arrow-right"></i></span>
+                </a>
+                <a href="#services" class="btn-secondary">
+                    <div class="btn-bg"></div>
+                    <span class="btn-content">Explore Services</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="services-bg-glow"></div>
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title">Our Services</h2>
+                <p class="section-desc">Comprehensive digital solutions tailored to your business needs</p>
+            </div>
+
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card reveal">
+                    <div class="service-icon-wrapper">
+                        <i data-lucide="shopping-cart" class="icon-blue"></i>
+                    </div>
+                    <h3 class="service-title">E-Commerce Development</h3>
+                    <p class="service-desc">Create secure, user-friendly online stores with easy management and scalable features.</p>
+                    <ul class="service-features">
+                        <li class="service-feature"><div class="feature-dot"></div>Custom shopping cart solutions</li>
+                        <li class="service-feature"><div class="feature-dot"></div>Mobile-responsive design</li>
+                        <li class="service-feature"><div class="feature-dot"></div>SEO optimization</li>
+                        <li class="service-feature"><div class="feature-dot"></div>Analytics & reporting</li>
+                    </ul>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="service-card reveal">
+                    <div class="service-icon-wrapper">
+                        <i data-lucide="target" class="icon-cyan"></i>
+                    </div>
+                    <h3 class="service-title">Promotional Websites</h3>
+                    <p class="service-desc">Create captivating landing pages and promotional sites that convert visitors into customers.</p>
+                    <ul class="service-features">
+                        <li class="service-feature"><div class="feature-dot"></div>High-conversion landing pages</li>
+                        <li class="service-feature"><div class="feature-dot"></div>Interactive elements</li>
+                        <li class="service-feature"><div class="feature-dot"></div>Social media integration</li>
+                        <li class="service-feature"><div class="feature-dot"></div>Lead generation forms</li>
+                    </ul>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service-card reveal">
+                    <div class="service-icon-wrapper">
+                        <i data-lucide="briefcase" class="icon-indigo"></i>
+                    </div>
+                    <h3 class="service-title">Business Websites</h3>
+                    <p class="service-desc">Professional corporate websites that establish credibility and showcase your services effectively.</p>
+                    <ul class="service-features">
+                        <li class="service-feature"><div class="feature-dot"></div>Custom design & branding</li>
+                        <li class="service-feature"><div class="feature-dot"></div>Content management system</li>
+                        <li class="service-feature"><div class="feature-dot"></div>Contact & booking forms</li>
+                        <li class="service-feature"><div class="feature-dot"></div>Blog integration</li>
+                    </ul>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="service-card reveal">
+                    <div class="service-icon-wrapper">
+                        <i data-lucide="smartphone" class="icon-purple"></i>
+                    </div>
+                    <h3 class="service-title">Web Applications</h3>
+                    <p class="service-desc">Develop custom web applications tailored to your specific business processes and workflows.</p>
+                    <ul class="service-features">
+                        <li class="service-feature"><div class="feature-dot"></div>Custom functionality</li>
+                        <li class="service-feature"><div class="feature-dot"></div>Database integration</li>
+                        <li class="service-feature"><div class="feature-dot"></div>User authentication</li>
+                        <li class="service-feature"><div class="feature-dot"></div>API development</li>
+                    </ul>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="service-card reveal">
+                    <div class="service-icon-wrapper">
+                        <i data-lucide="palette" class="icon-pink"></i>
+                    </div>
+                    <h3 class="service-title">UI/UX Design</h3>
+                    <p class="service-desc">Create beautiful, intuitive interfaces that users love and that drive engagement and conversions.</p>
+                    <ul class="service-features">
+                        <li class="service-feature"><div class="feature-dot"></div>Wireframing & prototyping</li>
+                        <li class="service-feature"><div class="feature-dot"></div>Visual design</li>
+                        <li class="service-feature"><div class="feature-dot"></div>Accessibility standards</li>
+                        <li class="service-feature"><div class="feature-dot"></div>Design systems</li>
+                    </ul>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="service-card reveal">
+                    <div class="service-icon-wrapper">
+                        <i data-lucide="rocket" class="icon-orange"></i>
+                    </div>
+                    <h3 class="service-title">Digital Marketing</h3>
+                    <p class="service-desc">Increase brand visibility and customer engagement through smart, targeted digital strategies.</p>
+                    <ul class="service-features">
+                        <li class="service-feature"><div class="feature-dot"></div>Search engine optimization</li>
+                        <li class="service-feature"><div class="feature-dot"></div>Content strategy</li>
+                        <li class="service-feature"><div class="feature-dot"></div>Social media marketing</li>
+                        <li class="service-feature"><div class="feature-dot"></div>Analytics & insights</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="process-section">
+        <div class="process-container">
+            <div class="section-header reveal">
+                <h2 class="section-title">Our Process</h2>
+                <p class="section-desc">A streamlined approach to bring your vision to life</p>
+            </div>
+
+            <div class="process-timeline">
+                <!-- Center Line Background -->
+                <div class="timeline-line-bg"></div>
+                
+                <!-- Animated Center Line -->
+                <div id="process-line" class="timeline-line-progress"></div>
+
+                <div class="process-steps">
+                    <!-- Step 1 -->
+                    <div class="process-step reveal-left">
+                        <div class="process-content">
+                            <div class="process-card">
+                                <div class="process-step-header">
+                                    <div class="process-icon">🔍</div>
+                                    <h3 class="process-step-title">Discovery</h3>
+                                </div>
+                                <h3 class="process-step-header-desktop">Discovery <span>🔍</span></h3>
+                                <p class="process-desc">We understand your goals, target audience, and project requirements through detailed consultation.</p>
+                                <div class="process-arrow right"></div>
+                            </div>
+                        </div>
+                        <div class="process-number">
+                            <span>1</span>
+                        </div>
+                        <div class="process-spacer"></div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="process-step reverse reveal-right">
+                        <div class="process-content">
+                            <div class="process-card">
+                                <div class="process-step-header">
+                                    <div class="process-icon">🗂️</div>
+                                    <h3 class="process-step-title">Planning</h3>
+                                </div>
+                                <h3 class="process-step-header-desktop"><span>🗂️</span> Planning</h3>
+                                <p class="process-desc">Create a comprehensive project roadmap with timelines, milestones, and deliverables.</p>
+                                <div class="process-arrow left"></div>
+                            </div>
+                        </div>
+                        <div class="process-number">
+                            <span>2</span>
+                        </div>
+                        <div class="process-spacer"></div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="process-step reveal-left">
+                        <div class="process-content">
+                            <div class="process-card">
+                                <div class="process-step-header">
+                                    <div class="process-icon">🎨</div>
+                                    <h3 class="process-step-title">Design</h3>
+                                </div>
+                                <h3 class="process-step-header-desktop">Design <span>🎨</span></h3>
+                                <p class="process-desc">Develop stunning visual concepts and interactive prototypes for your approval.</p>
+                                <div class="process-arrow right"></div>
+                            </div>
+                        </div>
+                        <div class="process-number">
+                            <span>3</span>
+                        </div>
+                        <div class="process-spacer"></div>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="process-step reverse reveal-right">
+                        <div class="process-content">
+                            <div class="process-card">
+                                <div class="process-step-header">
+                                    <div class="process-icon">💻</div>
+                                    <h3 class="process-step-title">Development</h3>
+                                </div>
+                                <h3 class="process-step-header-desktop"><span>💻</span> Development</h3>
+                                <p class="process-desc">Build your solution using cutting-edge technologies and best practices.</p>
+                                <div class="process-arrow left"></div>
+                            </div>
+                        </div>
+                        <div class="process-number">
+                            <span>4</span>
+                        </div>
+                        <div class="process-spacer"></div>
+                    </div>
+
+                    <!-- Step 5 -->
+                    <div class="process-step reveal-left">
+                        <div class="process-content">
+                            <div class="process-card">
+                                <div class="process-step-header">
+                                    <div class="process-icon">🧪</div>
+                                    <h3 class="process-step-title">Testing</h3>
+                                </div>
+                                <h3 class="process-step-header-desktop">Testing <span>🧪</span></h3>
+                                <p class="process-desc">Rigorous quality assurance to ensure flawless functionality across all devices.</p>
+                                <div class="process-arrow right"></div>
+                            </div>
+                        </div>
+                        <div class="process-number">
+                            <span>5</span>
+                        </div>
+                        <div class="process-spacer"></div>
+                    </div>
+
+                    <!-- Step 6 -->
+                    <div class="process-step reverse reveal-right">
+                        <div class="process-content">
+                            <div class="process-card">
+                                <div class="process-step-header">
+                                    <div class="process-icon">🚀</div>
+                                    <h3 class="process-step-title">Launch</h3>
+                                </div>
+                                <h3 class="process-step-header-desktop"><span>🚀</span> Launch</h3>
+                                <p class="process-desc">Deploy your project and provide ongoing support and maintenance.</p>
+                                <div class="process-arrow left"></div>
+                            </div>
+                        </div>
+                        <div class="process-number">
+                            <span>6</span>
+                        </div>
+                        <div class="process-spacer"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title">Pricing Plans</h2>
+                <p class="section-desc">Choose a plan that fits your business needs. Transparent pricing with no hidden costs.</p>
+            </div>
+
+            <div class="pricing-grid">
+                <!-- Basic Plan -->
+                <div class="pricing-card reveal reveal--zoom-in" data-stagger="100">
+                    <h3 class="pricing-title">Basic</h3>
+                    <div class="price-container">
+                        <span class="old-price">₹15,000/-</span>
+                        <span class="new-price" data-from="15000" data-to="7999">₹7,999/-</span>
+                    </div>
+                    <p class="pricing-subtitle">Best Suitable For:</p>
+                    <p class="pricing-desc">Personal Portfolio, Simple Info Website & Single-Page Website</p>
+                    <ul class="pricing-features">
+                        <li class="pricing-feature"><i data-lucide="check-circle"></i> Maintenance: 7 Days</li>
+                        <li class="pricing-feature"><i data-lucide="check-circle"></i> Delivery Time: 15-20 Days</li>
+                        <li class="pricing-feature"><i data-lucide="check-circle"></i> Revisions: 1 Time</li>
+                    </ul>
+                    <a href="#contact" class="btn-secondary w-full">
+                        <div class="btn-bg"></div>
+                        <span class="btn-content">Get Started</span>
+                    </a>
+                </div>
+
+                <!-- Standard Plan -->
+                <div class="pricing-card reveal">
+                    <h3 class="pricing-title">Standard</h3>
+                    <div class="price-container">
+                        <span class="old-price">₹20,000/-</span>
+                        <span class="new-price" data-from="20000" data-to="11999">₹11,999/-</span>
+                    </div>
+                    <p class="pricing-subtitle">Best Suitable For:</p>
+                    <p class="pricing-desc">Small Business, Tourism Website & Coaching Institute Website</p>
+                    <ul class="pricing-features">
+                        <li class="pricing-feature"><i data-lucide="check-circle"></i> Maintenance: 15 Days</li>
+                        <li class="pricing-feature"><i data-lucide="check-circle"></i> Delivery Time: 20-25 Days</li>
+                        <li class="pricing-feature"><i data-lucide="check-circle"></i> Revisions: 2 Times</li>
+                    </ul>
+                    <a href="#contact" class="btn-secondary w-full">
+                        <div class="btn-bg"></div>
+                        <span class="btn-content">Get Started</span>
+                    </a>
+                </div>
+
+                <!-- Premium Plan -->
+                <div class="pricing-card reveal">
+                    <h3 class="pricing-title">Premium</h3>
+                    <div class="price-container">
+                        <span class="old-price">₹25,000/-</span>
+                        <span class="new-price" data-from="25000" data-to="19999">₹19,999/-</span>
+                    </div>
+                    <p class="pricing-subtitle">Best Suitable For:</p>
+                    <p class="pricing-desc">Professional Business, Tourism Website, Startup & Brand Websites</p>
+                    <ul class="pricing-features">
+                        <li class="pricing-feature"><i data-lucide="check-circle"></i> Maintenance: 30 Days</li>
+                        <li class="pricing-feature"><i data-lucide="check-circle"></i> Delivery Time: 45-50 Days</li>
+                        <li class="pricing-feature"><i data-lucide="check-circle"></i> Revisions: 3 Times</li>
+                    </ul>
+                    <a href="#contact" class="btn-secondary w-full">
+                        <div class="btn-bg"></div>
+                        <span class="btn-content">Get Started</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="contact-container reveal">
+            <div class="contact-grid">
+                <div>
+                    <h2 class="contact-title">Let's Talk</h2>
+                    <p class="contact-desc">Ready to start your project? Fill out the form and we'll get back to you within 24 hours.</p>
+                    
+                    <div class="contact-info-list">
+                        <div class="contact-info-item">
+                            <div class="contact-icon-box">
+                                <i data-lucide="mail"></i>
+                            </div>
+                            <div>
+                                <h4 class="contact-label">Email Us</h4>
+                                <p class="contact-value">hello@viansasolutions.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <div class="contact-icon-box">
+                                <i data-lucide="phone"></i>
+                            </div>
+                            <div>
+                                <h4 class="contact-label">Call Us</h4>
+                                <p class="contact-value">+1 (555) 123-4567</p>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <div class="contact-icon-box">
+                                <i data-lucide="map-pin"></i>
+                            </div>
+                            <div>
+                                <h4 class="contact-label">Visit Us</h4>
+                                <p class="contact-value">123 Tech Avenue, Innovation City</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label>Name</label>
+                        <input type="text" class="input-field" placeholder="Your Name">
+                    </div>
+                    <div class="form-group">
+                        <label>Mobile No.</label>
+                        <input type="tel" class="input-field" placeholder="Your mobile number">
+                    </div>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" class="input-field" placeholder="your@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label>Service</label>
+                        <select class="input-field" aria-label="Service selection">
+                            <option value="">Select a service</option>
+                            <option>E-Commerce Development</option>
+                            <option>Promotional Websites</option>
+                            <option>Business Websites</option>
+                            <option>Web Applications</option>
+                            <option>UI/UX Design</option>
+                            <option>Digital Marketing</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Message</label>
+                        <textarea rows="4" class="input-field" placeholder="Tell us about your project..."></textarea>
+                    </div>
+                    <a href="#" class="btn-primary w-full">
+                        <div class="btn-bg"></div>
+                        <span class="btn-content">Send Message</span>
+                    </a>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+    <div class="container footer-content">
+        <!-- Brand -->
+        <div class="footer-section">
+        <h3>Viansa Solutions</h3>
+        <p class="footer-desc">
+            Your trusted partner for digital transformation. We create solutions that drive growth and engage audiences.
+        </p>
+        </div>
+
+        <!-- Services -->
+        <div class="footer-section">
+        <h3>Services</h3>
+        <ul>
+            <li><a href="#services">E-Commerce Development</a></li>
+            <li><a href="#services">Promotional Websites</a></li>
+            <li><a href="#services">Business Websites</a></li>
+            <li><a href="#services">Web Applications</a></li>
+            <li><a href="#services">UI/UX Design</a></li>
+            <li><a href="#services">Digital Marketing</a></li>
+        </ul>
+        </div>
+
+        <!-- Company -->
+        <div class="footer-section">
+        <h3>Company</h3>
+        <ul>
+            <li><a href="#process">Our Process</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="footer-section">
+        <h3>Contact</h3>
+        <ul>
+            <li class="footer-text">Email: viansasolutions@gmail.com</li>
+        </ul>
+        </div>
+    </div>
+
+    <!-- Bottom -->
+    <div class="footer-bottom">
+        <p>
+        &copy; <script>document.write(new Date().getFullYear())</script>
+        Viansa Solutions. All rights reserved. | Built with excellence
+        </p>
+    </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
